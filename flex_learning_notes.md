@@ -1,0 +1,26 @@
+* Flex布局（自适应布局）
+    - 主轴 和 交叉轴（主轴：元素排列的顺序，水平时主轴也是水平的）
+    - class="container"  .container{display: flex}   则 使用了flex布局
+    - flex-direction(元素的排列方向)
+        --->row row-reverse 横向
+        --->column colunmn-reverse 纵向
+    - flex-wrap 换行
+        --->nowrap wrap wrap-reverse
+    - justify-content 设置元素在主轴上的对齐方式
+        --->flex-start flex-end
+        --->center
+        --->space-between space-around （元素的中间/两边 留有空格, space-around时旁边和中间的间隙是1:2）
+    - align-items (设置元素在交叉轴上的对齐方式)
+        --->flex-start flex-end
+        --->center
+        --->streth(默认：拉伸) 当元素的高度没有设置，则元素的高度会拉伸至容器高度一致
+        --->baseline（保证元素中的文字在同一条基准线（保证每个文字都在同一条线上））
+    - align-content 设置轴线的对齐方式（轴线当作元素）
+        --->flex-start flex-end
+        --->center    stretch
+        --->space-between    space-around
+    - order flex容器内部的每个元素的排列顺序（默认都为0） 从小到大排
+    - flex-grow 设置元素的放大比例（默认为 0，不放大
+    - flex-shrink 控制元素缩小比例）
+    - flex-basis 设置元素固定或自动空间的占比
+    - align-self: 重写容器中元素在交叉轴上的对齐方式(覆盖父级中的align-items)
